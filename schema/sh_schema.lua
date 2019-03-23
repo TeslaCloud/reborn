@@ -5,12 +5,12 @@
   You are supposed to use this file to include other files (such as hooks, etc).
 --]]
 
-require_relative 'cl_schema.lua'
-require_relative 'sv_schema.lua'
+require_relative 'cl_schema'
+require_relative 'sv_schema'
 
 -- It is recommended to include hooks after everything else has been included.
-require_relative 'cl_hooks.lua'
-require_relative 'sv_hooks.lua'
+require_relative 'cl_hooks'
+require_relative 'sv_hooks'
 
 -- A function to kill a random player.
 function Schema:kill_random_player()
