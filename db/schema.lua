@@ -1,6 +1,6 @@
 --
 -- This is an ActiveRecord schema file.
--- Dumped at 2018-10-07 03:02:16 
+-- Dumped at 2018-10-07 03:02:16
 --
 local Structure = ActiveRecord.Schema:define(20181007030219)
   function Structure:create_tables()
