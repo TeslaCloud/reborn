@@ -2,8 +2,8 @@
   This is how you define a library.
 --]]
 
-library 'Schema::Test'
+library 'SCHEMA::Test'
 
-function Schema.Test:do_nothing()
+function SCHEMA.Test:do_nothing()
 
 end

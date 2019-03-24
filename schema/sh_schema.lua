@@ -13,7 +13,7 @@ require_relative 'cl_hooks'
 require_relative 'sv_hooks'
 
 -- A function to kill a random player.
-function Schema:kill_random_player()
+function SCHEMA:kill_random_player()
   local random_player = player.random()
 
   if IsValid(random_player) then

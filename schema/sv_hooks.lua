@@ -1,6 +1,6 @@
 -- Serverside hooks would go here.
 
 -- Kill a random player every minute.
-function Schema:OneMinute()
+function SCHEMA:OneMinute()
 
 end
