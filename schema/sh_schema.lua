@@ -5,6 +5,8 @@
   You are supposed to use this file to include other files (such as hooks, etc).
 --]]
 
+SCHEMA.default_theme = 'reborn'
+
 require_relative 'cl_schema'
 require_relative 'sv_schema'
 
