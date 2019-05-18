@@ -18,11 +18,5 @@ local Migration = ActiveRecord.Migration.new(20181007030218)
       t:integer 'user_id'
       t:integer 'health'
     end)
-
-    ActiveRecord.define_model('data', function(t)
-      t:string 'key'
-      t:text 'value'
-      t:integer 'character_id'
-    end)
   end
 return Migration
