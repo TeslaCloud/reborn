@@ -25,7 +25,7 @@ function THEME:on_loaded()
   -- self:set_material('schema_logo', 'materials/flux/hl2rp/logo.png')
   -- self:set_material('gradient', 'materials/flux/hl2rp/gradient.png')
 
-  self:set_font('text_bar', self:get_font('main_font'), math.max(Font.scale(14), 14), { weight = 600 })
+  self:set_font('text_bar', self:get_font('main_font'), math.max(math.scale(14), 14), { weight = 600 })
 end
 
 function THEME:TestHook()
