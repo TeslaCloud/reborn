@@ -1,4 +1,6 @@
 -- Feel free to use this as a base for your own custom theme!
+-- Please note that themes may be deprecated soon.
+-- They will be HTML-based eventually.
 
 THEME.author  = 'TeslaCloud Studios'
 THEME.id      = 'reborn'
