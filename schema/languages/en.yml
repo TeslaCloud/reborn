@@ -16,3 +16,8 @@
 en:
   reborn:
     welcome_text: "Yay, Flux is working properly!"
+    faction:
+      citizen:
+        title: "Citizen"
+        description: "A regular person who lives in a city."
+        phys_desc: "Tall."

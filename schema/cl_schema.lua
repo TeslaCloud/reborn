@@ -1,4 +1,5 @@
--- Clientside helpers would go here (e.g. net receivers, drawing functions, etc.)
+-- Use this file to define schema methods that should be clientside-only.
+-- These methods aren't hooks, they may be helpers, or some logic that you may want to have.
 
 local last_names  = { 'the Mingebag', 'the Cat Lover', 'the Great' }
 local first_names = {

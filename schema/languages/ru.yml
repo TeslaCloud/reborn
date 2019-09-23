@@ -16,3 +16,8 @@
 ru:
   reborn:
     welcome_text: "Ура, Флюкс работает!"
+    faction:
+      citizen:
+        title: "Гражданский"
+        description: "Обычный человек, который живет в городе."
+        phys_desc: "Высокого роста."
