@@ -2,7 +2,7 @@
   This is how you define a library.
 --]]
 
-library 'SCHEMA::Test'
+mod 'SCHEMA::Test'
 
 function SCHEMA.Test:do_nothing()
 
