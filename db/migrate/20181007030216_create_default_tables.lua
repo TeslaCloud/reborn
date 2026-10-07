@@ -1,4 +1,5 @@
 local Migration = ActiveRecord.Migration.new(20181007030216)
+  --- Creates the users and logs tables and indexes users by steam_id.
   function Migration:change()
     ActiveRecord.define_model('users', function(t)
       t:string { 'steam_id', null = false }

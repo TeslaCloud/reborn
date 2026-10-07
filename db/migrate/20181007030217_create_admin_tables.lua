@@ -1,4 +1,5 @@
 local Migration = ActiveRecord.Migration.new(20181007030217)
+  --- Creates the permissions, temp_permissions and bans tables and adds role and banned columns to users.
   function Migration:change()
     ActiveRecord.define_model('permissions', function(t)
       t:string 'permission_id'

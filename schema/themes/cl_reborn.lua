@@ -6,6 +6,7 @@ THEME.author  = 'TeslaCloud Studios'
 THEME.id      = 'reborn'
 THEME.parent  = 'factory'
 
+--- Sets the accent colors, main menu sidebar layout, menu music, bar height and bar text font.
 function THEME:on_loaded()
   local scrw, scrh = ScrW(), ScrH()
   local accent_color = Color(220, 100, 220)
@@ -30,6 +31,8 @@ function THEME:on_loaded()
   self:set_font('text_bar', self:get_font('main_font'), math.max(math.scale(14), 14), { weight = 600 })
 end
 
+--- Returns the theme accent color.
+-- @return [Color accent color]
 function THEME:TestHook()
   return self:get_color('accent')
 end

@@ -3,6 +3,7 @@
 -- Dumped at 2018-10-07 03:02:16
 --
 local Structure = ActiveRecord.Schema:define(20181007030219)
+  --- Creates every table of the current schema version along with the users steam_id index.
   function Structure:create_tables()
     create_table('ammunitions', function(t)
       t:primary_key 'id'

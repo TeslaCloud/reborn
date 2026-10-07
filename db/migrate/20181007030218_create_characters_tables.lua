@@ -1,4 +1,5 @@
 local Migration = ActiveRecord.Migration.new(20181007030218)
+  --- Creates the ammunitions and characters tables.
   function Migration:change()
     ActiveRecord.define_model('ammunitions', function(t)
       t:string 'type'

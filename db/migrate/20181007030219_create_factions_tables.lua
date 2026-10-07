@@ -1,4 +1,5 @@
 local Migration = ActiveRecord.Migration.new(20181007030219)
+  --- Creates the whitelists table and adds faction and rank columns to characters.
   function Migration:change()
     ActiveRecord.define_model('whitelists', function(t)
       t:string 'faction_id'
