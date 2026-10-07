@@ -51,4 +51,4 @@ FACTION.models.female = {
   'models/humans/group01/female_07.mdl'
 }
 
--- You may also specify FACTION.models_universal to specify models that may be used for both genders.
+-- You may also specify FACTION.models.universal to specify models that may be used for both genders.

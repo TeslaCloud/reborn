@@ -21,7 +21,7 @@ function THEME:on_loaded()
   self:set_option('menu_sidebar_height', scrh * 0.25)
   self:set_option('menu_sidebar_button_centered', true)
   self:set_option('menu_sidebar_button_offset_x', 0)
-  self:set_option('menu_music', 'sound/music/hl2_song19.mp3')
+  self:set_sound('menu_music', 'sound/music/hl2_song19.mp3')
   self:set_option('bar_height', 7)
 
   -- self:set_material('schema_logo', 'materials/flux/hl2rp/logo.png')

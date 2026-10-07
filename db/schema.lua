@@ -5,38 +5,11 @@
 local Structure = ActiveRecord.Schema:define(20181007030219)
   function Structure:create_tables()
 
-    create_table("ammo", function(t)
+    create_table("ammunitions", function(t)
       t:primary_key "id"
       t:string "type"
       t:integer "amount"
       t:integer "character_id"
-      t:datetime "created_at"
-      t:datetime "updated_at"
-    end)
-
-    create_table("attribute_boosts", function(t)
-      t:primary_key "id"
-      t:integer "attribute_id"
-      t:integer "value"
-      t:integer "duration"
-      t:datetime "created_at"
-      t:datetime "updated_at"
-    end)
-
-    create_table("attribute_multipliers", function(t)
-      t:primary_key "id"
-      t:integer "attribute_id"
-      t:integer "value"
-      t:integer "duration"
-      t:datetime "created_at"
-      t:datetime "updated_at"
-    end)
-
-    create_table("attributes", function(t)
-      t:primary_key "id"
-      t:string "attr_id"
-      t:integer "character_id"
-      t:integer "value"
       t:datetime "created_at"
       t:datetime "updated_at"
     end)
@@ -47,7 +20,6 @@ local Structure = ActiveRecord.Schema:define(20181007030219)
       t:string "steam_id"
       t:text "reason"
       t:integer "duration"
-      t:integer "user_id"
       t:datetime "unban_time"
       t:datetime "created_at"
       t:datetime "updated_at"
@@ -55,30 +27,18 @@ local Structure = ActiveRecord.Schema:define(20181007030219)
 
     create_table("characters", function(t)
       t:primary_key "id"
+      t:integer "user_id"
       t:string "steam_id"
       t:string "name"
-      t:string "model"
       t:integer "gender"
       t:text "phys_desc"
-      t:integer "money"
-      t:integer "character_id"
-      t:integer "user_id"
+      t:string "model"
+      t:integer "skin"
       t:integer "health"
       t:datetime "created_at"
       t:datetime "updated_at"
       t:string "faction"
-      t:string "char_class"
-      t:text "item_ids"
-      t:integer "skin"
-    end)
-
-    create_table("data", function(t)
-      t:primary_key "id"
-      t:string "key"
-      t:text "value"
-      t:integer "character_id"
-      t:datetime "created_at"
-      t:datetime "updated_at"
+      t:integer "rank"
     end)
 
     create_table("logs", function(t)
@@ -94,8 +54,18 @@ local Structure = ActiveRecord.Schema:define(20181007030219)
     create_table("permissions", function(t)
       t:primary_key "id"
       t:string "permission_id"
-      t:string "object"
+      t:integer "object"
       t:integer "user_id"
+      t:datetime "created_at"
+      t:datetime "updated_at"
+    end)
+
+    create_table("temp_permissions", function(t)
+      t:primary_key "id"
+      t:string "permission_id"
+      t:integer "object"
+      t:integer "user_id"
+      t:timestamp "expires"
       t:datetime "created_at"
       t:datetime "updated_at"
     end)
@@ -113,7 +83,6 @@ local Structure = ActiveRecord.Schema:define(20181007030219)
     create_table("whitelists", function(t)
       t:primary_key "id"
       t:string "faction_id"
-      t:integer "character_id"
       t:integer "user_id"
       t:datetime "created_at"
       t:datetime "updated_at"

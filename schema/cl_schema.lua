@@ -7,8 +7,8 @@ local first_names = {
   female  = { 'Jane', 'Gloria', 'Michelle', 'Anna' }
 }
 
-function SCHEMA:get_random_name(char_data)
-  local gender = string.lower(char_data.gender or 'male')
+function SCHEMA:get_random_name(gender, char_data)
+  gender = first_names[gender] and gender or 'male'
   local last_name = last_names[math.random(1, #last_names)]
   local first_name = first_names[gender][math.random(1, #first_names[gender])]
 

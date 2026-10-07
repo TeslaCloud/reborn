@@ -6,13 +6,13 @@
 -- an even letter of the alphabet.
 -- ```
 -- -- Kill uncool players!
--- if !SCHEMA:is_player_cool(player) then
---   player:Kill()
+-- if !SCHEMA:is_player_cool(target) then
+--   target:Kill()
 -- end
 -- ```
 -- @return [Boolean(Player Coolness)]
-function SCHEMA:is_player_cool(player)
-  local first_letter = player:Name()[1]
+function SCHEMA:is_player_cool(target)
+  local first_letter = target:Name()[1]
 
   return math.even(first_letter)
 end
