@@ -15,7 +15,7 @@ function THEME:on_loaded()
   self:set_color('accent_dark', accent_color:darken(20))
   self:set_color('accent_light', accent_color:lighten(20))
 
-  self:set_option('menu_sidebar_width', scrw / 4)
+  self:set_option('menu_sidebar_width', scrw * 0.25)
   self:set_option('menu_sidebar_x', scrw * 0.5)
   self:set_option('menu_sidebar_y', scrh * 0.25 * 3)
   self:set_option('menu_sidebar_logo_space', 0)
