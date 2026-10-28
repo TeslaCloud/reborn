@@ -1,12 +1,9 @@
--- This file is an example of how you may create your own
--- Flux modules in your schema. These modules may be included
--- by you later in your classes, or used on their own.
+--- An example of a Flux module namespaced within the schema. Modules may be included into
+-- classes or other modules, or used on their own.
 
--- You may prefer to namespace your modules within the schema.
 mod 'SCHEMA::Test'
 
 --- A function that does absolutely nothing, and returns nothing.
--- @return[nil(Yes, I meant it when I said it returns nothing)]
+-- @return [nil]
 function SCHEMA.Test:do_nothing()
-  -- Yes, we really do nothing.
 end

@@ -1,8 +1,8 @@
--- Client-side hooks should be added here.
--- Instead of using hook.Add, like you would while developing a Garry's Mod addon,
--- you should instead create a gamemode-like function here inside the SCHEMA table.
+--- Client-side hooks of the schema. Hooks are handled by gamemode-like functions on the
+-- SCHEMA table instead of hook.Add.
 
---- Paint the HUD with the Reborn test text, that displays a sample phrase.
+--- Draws the welcome phrase in the top left corner of the HUD, in the color the active theme
+-- returns from its TestHook method.
 function SCHEMA:HUDPaint()
   draw.SimpleText(t'reborn.welcome_text', 'DermaLarge', 16, 16, Theme.hook('TestHook'))
 end

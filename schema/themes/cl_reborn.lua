@@ -1,7 +1,3 @@
--- Feel free to use this as a base for your own custom theme!
--- Please note that themes may be deprecated soon.
--- They will be HTML-based eventually.
-
 THEME.author  = 'TeslaCloud Studios'
 THEME.id      = 'reborn'
 THEME.parent  = 'factory'
@@ -24,9 +20,6 @@ function THEME:on_loaded()
   self:set_option('menu_sidebar_button_offset_x', 0)
   self:set_sound('menu_music', 'sound/music/hl2_song19.mp3')
   self:set_option('bar_height', 7)
-
-  -- self:set_material('schema_logo', 'materials/flux/hl2rp/logo.png')
-  -- self:set_material('gradient', 'materials/flux/hl2rp/gradient.png')
 
   self:set_font('text_bar', self:get_font('main_font'), math.max(math.scale(14), 14), { weight = 600 })
 end

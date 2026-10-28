@@ -8,10 +8,10 @@ depends:
   - observer
   - stamina
   - thirdperson
-  - "cl_adminesp.lua"
-  - "cl_crosshair.lua"
+  - adminesp
+  - crosshair
   - hints
-  - "cl_toolgun_fix.lua"
-  - "sh_autowalk.lua"
+  - toolgun_fix
+  - autowalk
   - raisegun
-  - "sh_weaponselect.lua"
+  - weaponselect

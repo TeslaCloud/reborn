@@ -1,15 +1,11 @@
--- This file in an entry point for your schema. It will be included first, right after all of the
--- folders have been included (so, for example, "lib" folder would load before this file).
---
--- You are supposed to use this file to include other files (such as hooks, etc).
+--- Entry point of the schema. It is included before the schema's folders, so `lib` and the
+-- other folders load after it, and it includes the other files of the schema.
 
 SCHEMA.default_theme = 'reborn'
 
--- Include the core files for your schema, as well as any other files you may need.
 require_relative 'cl_schema'
 require_relative 'sv_schema'
 
--- Incldue the hook files last, so that we already have our environment defined.
 require_relative 'cl_hooks'
 require_relative 'sv_hooks'
 
