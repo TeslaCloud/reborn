@@ -1,0 +1,7 @@
+Style/IncompleteDocumentation:
+  Enabled: true
+
+Lint/UncheckedEntityInCallback:
+  EntityNames: ['actor', 'ply', 'player', 'pl', 'client', 'ent', 'entity', 'target', 'victim',
+                'attacker', 'inflictor', 'owner', 'weapon', 'wep', 'npc', 'vehicle', 'ragdoll',
+                'prop', 'panel']
