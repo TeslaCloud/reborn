@@ -1,3 +1,7 @@
+AllReaders:
+  Exclude:
+    - 'db/**/*'
+
 Style/IncompleteDocumentation:
   Enabled: true
 
