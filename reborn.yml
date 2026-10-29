@@ -1,15 +1,1 @@
-depends:
-  - 3dtexts
-  - admin
-  - characters
-  - factions
-  - staticents
-  - chatbox
-  - observer
-  - stamina
-  - thirdperson
-  - crosshair
-  - hints
-  - autowalk
-  - raisegun
-  - weaponselect
+profile: roleplay
