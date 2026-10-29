@@ -8,7 +8,6 @@ depends:
   - observer
   - stamina
   - thirdperson
-  - adminesp
   - crosshair
   - hints
   - autowalk
