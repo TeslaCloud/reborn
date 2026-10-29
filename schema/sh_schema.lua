@@ -3,7 +3,6 @@
 
 SCHEMA.default_theme = 'reborn'
 
-require_relative 'cl_schema'
 require_relative 'sv_schema'
 
 require_relative 'cl_hooks'
