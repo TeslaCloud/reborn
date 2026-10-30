@@ -26,6 +26,6 @@ end
 
 --- Returns the theme accent color.
 -- @return [Color accent color]
-function THEME:TestHook()
+function THEME:GetWelcomeTextColor()
   return self:get_color('accent')
 end
