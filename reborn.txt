@@ -1,5 +1,6 @@
 "reborn"
 {
+  "base"          "sandbox"
   "title"         "Reborn"
   "author"        "TeslaCloud Studios"
   "description"   "A test schema for Flux framework."
